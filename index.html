@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraphrasing Tool</title>
+    <link rel="stylesheet" href="styles.css">
+  
+  <header>
+    
+</header>
+
+</head>
+<body>
+
+    <header>
+        <h1>Paraphrasing Tool</h1>
+        <nav>
+            <a href="#">English</a>
+            <a href="#">German</a>
+            <a href="#">Hindi</a>
+          <a href="#">Russian</a>
+          <a href="#">Spanish</a>
+           <a href="#">French</a>
+          <a href="#">Premium</a>
+          
+         
+        <a href="#" onclick="showSignInForm()">Sign In</a>
+        <a href="#" onclick="showSignUpForm()">Sign Up</a>
+          <label for="summaryLength">Summary length:</label>
+        <input type="range" id="summaryLength" min="0" max="100" value="50" />
+        <button type="button" onclick="summarizeParagraph()">Summarize</button>
+    
+        </nav>
+    </header>
+
+    <main>
+        <div class="sidebar">
+            <h2>Features</h2>
+            <ul>
+                <li><a href="#" onclick="rewriteText()">Rewrite Text</a></li>
+                <li><a href="#" onclick="checkGrammar()">Grammar Checker</a></li>
+              <li><a href="#" onclick="Plagiarismchecker()">Plagiarism checker</a></li>
+              <li><a href="#" onclick="Summarizer()">Summarizer</a></li>
+              <li><a href="#" onclick="CitationGenerator()">Citation Generator</a></li>
+              <li><a href="#" onclick="Co-writer()">Co-writer</a></li>
+               <li><a href="#" onclick="Translator()">Translator</a></li>
+            </ul>
+          
+        </div>
+
+        <div class="content">
+            <form id="rewriterForm">
+                <label for="inputText">Enter your text:</label>
+                <textarea id="inputText" placeholder="Type or paste your text here..."></textarea>
+                <button type="button" onclick="rewriteText()">Rewrite Text</button>
+            </form>
+
+            <div id="output">
+                <h2>Rewritten Text:</h2>
+                <p id="rewrittenText"></p>
+        
+
+<section class="  quillbot-summary-section">
+    <h2>QuillBot Summarizer</h2>
+    <p>Summarize any text with a click of a button. QuillBot's Summarizer can condense articles, papers, or documents down to the key points instantly. Our AI uses natural language processing to locate critical information while maintaining the original context.</p>
+    <button onclick="summarizeWithQuillBot()">Summarize with QuillBot</button>
+    <div id="quillbotSummaryOutput">
+        <h3>QuillBot Summary</h3>
+        <p id="quillbotSummaryText"></p>
+    </div>
+</section>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
